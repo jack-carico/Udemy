@@ -5,9 +5,12 @@
 
 https://www.udemy.com/ngrx-course
 
+NgRx base documentation: https://github.com/ngrx/platform/tree/master/docs
 
 
 ## NgRx Store (Section 2)
+
+Store basic patterns: https://github.com/ngrx/platform/blob/master/docs/store/README.md 
 
 ### Section 2.8
 context src/app/auth
@@ -46,3 +49,37 @@ selectors createSelector() @ngrx/store
 select operator @ngrx/store
 
 ### S2.17 authn guard implementation.
+
+## S3 NgRx Effects library
+store and side-effects. 
+
+### S3.18 local storage
+!! exactly what I want to know how to do. !!
+
+monitoring Action(s) against the store. 
+terms: 
+* Effects service
+* @ngrx/effects
+
+snippets:
+* ng generate effect auth/AuthEffect --module auth/auth.module.ts
+
+### S3.19 
+
+
+ngrx store freeze.
+time-travelling debugging: ngrx router store.
+
+ngrx-store-freeze github: bandonroberts/ngrx-store-freeze (used in dev mode only.)
+
+
+
+## S4 NgRx Entity
+
+first entity "Course"
+
+Action design 
+
+async pipe?
+
+ngOnInit => store init actions / side-effects.
